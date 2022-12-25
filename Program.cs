@@ -68,5 +68,8 @@ bool WeekCheck(int number)
 Console.Write("Enter the number of the day of the week: ");
 int userNumber = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine($"Is your day number {userNumber} a weekend? - {WeekCheck(userNumber)}");
+if (userNumber < 1 || userNumber > 7)
+    Console.Write("Uncorrect number");
+else
+    Console.WriteLine($"Is your day number {userNumber} a weekend? - {WeekCheck(userNumber)}");
 */
